@@ -7,6 +7,7 @@ import { ProductFromComponent } from './product-from/product-from.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AgGridAngular,AgGridModule } from 'ag-grid-angular';
 import { Component } from 'ag-grid-community';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { Component } from 'ag-grid-community';
   imports: [
     CommonModule,
     CURDRoutingModule,
-    AgGridModule
+    AgGridModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class CURDModule { }
